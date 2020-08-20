@@ -1,4 +1,4 @@
-## Worked with classmates from Together Work Channel adn others
+## Worked with classmates from Together Work Channel and others
 
 Mavrick Watts, Edwin Torres, Lori Henderson, Jessica Woods, and Triston Reeves
 
