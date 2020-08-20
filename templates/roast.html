@@ -5,7 +5,12 @@
 {% for roasts in roast%}
 {%if not roasts.choices%}
 <h2>Roasts</h2>
+{{ roasts.totalvotes}}
+<br>
 {{roasts.user_input}}
+<br>
+<br>
+<a href='/upvote/{{roasts.id}}/'>UPVOTE</a>   <a href='/downvote/{{roasts.id}}/'>DOWNVOTE</a>
 <br>
 {{roasts.time_posted}}
 {%endif%}

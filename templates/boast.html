@@ -5,7 +5,12 @@
 {% for boasts in boast%}
 {%if boasts.choices%}
 <h2>Boasts</h2>
+{{ boasts.totalvotes}}
+<br>
 {{boasts.user_input}}
+<br>
+<br>
+<a href='/upvote/{{boasts.id}}/'>UPVOTE</a>   <a href='/downvote/{{boasts.id}}/'>DOWNVOTE</a>
 <br>
 {{boasts.time_posted}}
 {%endif%}
