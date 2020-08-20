@@ -1,0 +1,25 @@
+<a href='/'>Home</a> |
+<a href='/sortbyvote/'>Sort by Votes</a> |
+<a href='/boasts/'> Boasts</a> |
+<a href='/roasts/'>Roasts</a> |
+<a href='/createpost/'>Create Posts</a>
+<br>
+<h1>{{welcome}}</h1>
+{% for posts in ghostpost %}
+<ul>
+{% if posts.choices %}
+<h2>Boast</h2>
+{%else%}
+<h2>Roast</h2>
+{% endif %}
+{{ posts.totalvotes}}
+<br>
+{{posts.user_input}}
+<br>
+<br>
+<a href='/upvote/{{posts.id}}/'>UPVOTE</a>   <a href='/downvote/{{posts.id}}/'>DOWNVOTE</a>
+<br>
+<br>
+{{posts.time_posted}}
+</ul>
+{% endfor %}
